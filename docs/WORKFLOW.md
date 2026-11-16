@@ -25,14 +25,21 @@ Set absolute paths appropriate to your installation:
     export REPO_DIR="/path/to/downloaded/code"
     export SRA_FASTQ_DIR="/path/to/downloaded/fastqs"
     export SUPPORTING_ROOT="/path/to/extracted/zenodo/dataset"
-    export SUPPORTING_DATA_DIR="$SUPPORTING_ROOT/sequencing_metadata"
+    export SUPPORTING_DATA_DIR="$SUPPORTING_ROOT"
     export OUTPUT_DIR="/path/to/separate/reproduction_workspace"
 
 The workspace must be outside the repository and input directories.
 Use a new workspace. Do not point it at existing analytical results.
 
-The supporting-data root must contain sequencing_metadata/ and the
-three dataset directories holding the MinKNOW report JSON files.
+The Zenodo download contains ten files in a flat directory.
+Keep the six compressed summaries in SUPPORTING_ROOT and create
+three subdirectories for the MinKNOW reports:
+
+- full-meta-dataset/
+- full-nas-dataset/
+- half-flowcell-dataset/
+
+Move each MinKNOW report into its corresponding directory.
 
 ## 3. Preview input import
 
