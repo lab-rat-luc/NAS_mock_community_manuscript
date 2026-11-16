@@ -1,0 +1,28 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it using the metadata in this file."
+type: software
+
+title: "Evaluating nanopore adaptive sampling (NAS) for recovering the mitochondrial genomes of low-abundance pest and beneficial species in mixed insect samples"
+
+authors:
+  - family-names: Shepherd
+    given-names: "Luc D. F."
+    affiliation: "Agriculture Victoria; La Trobe University"
+  - family-names: Blacket
+    given-names: "Mark J."
+    affiliation: "Agriculture Victoria; La Trobe University"
+  - family-names: Rodoni
+    given-names: "Brendan C."
+    affiliation: "Agriculture Victoria; La Trobe University"
+  - family-names: Martoni
+    given-names: Francesco
+    affiliation: "Agriculture Victoria; La Trobe University"
+
+keywords:
+  - nanopore adaptive sampling
+  - mitochondrial genomics
+  - metagenomics
+  - insect mock community
+  - reproducible research
+
+repository-code: "https://github.com/lab-rat-luc/NAS_mock_community_manuscript"

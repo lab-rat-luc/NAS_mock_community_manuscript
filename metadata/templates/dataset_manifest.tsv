@@ -1,0 +1,7 @@
+dataset	read_subset	experiment	bam
+full_meta	all_metagenomic_reads	whole_flowcell	{WORKSPACE}/full-meta-dataset/filtered/full-meta-merged/bams/positive.strict.bam
+full_nas_accepted	nas_accepted_reads	whole_flowcell	{WORKSPACE}/full-nas-dataset/filtered/full-nas-merged/bams/positive.strict.bam
+full_nas_rejected	nas_rejected_reads	whole_flowcell	{WORKSPACE}/full-nas-dataset/filtered/full-nas-merged/bams/unblock.strict.bam
+half_meta	all_metagenomic_reads	half_flowcell	{WORKSPACE}/half-flowcell-dataset/filtered/unclassified/bams/META.strict.bam
+half_nas_accepted	nas_accepted_reads	half_flowcell	{WORKSPACE}/half-flowcell-dataset/filtered/unclassified/bams/NAS.positive.strict.bam
+half_nas_rejected	nas_rejected_reads	half_flowcell	{WORKSPACE}/half-flowcell-dataset/filtered/unclassified/bams/NAS.unblock.strict.bam

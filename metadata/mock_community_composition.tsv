@@ -1,0 +1,17 @@
+reference	refseq_accession	species	order	expected_DNA_RA_percent	target_status	individuals_or_tissue	specimen_source	reference_length	collection_date	geo_loc_name	sample_preparation_location
+NC_024855_Musca_domestica	NC_024855.1	Musca domestica	Diptera	24.0	other_non_target	5 heads	Lab-reared	16108			AgriBio, Bundoora, Victoria, Australia
+NC_019633_Chrysomya_megacephala	NC_019633.1	Chrysomya megacephala	Diptera	17.0	other_non_target	5 heads	Lab-reared	15273			AgriBio, Bundoora, Victoria, Australia
+NC_062139_Bactrocera_neohumeralis	NC_062139.1	Bactrocera neohumeralis	Diptera	12.0	other_non_target	5 heads	Lab-reared	15924			AgriBio, Bundoora, Victoria, Australia
+NC_024511_Drosophila_melanogaster	NC_024511.2	Drosophila melanogaster	Diptera	10.5	other_non_target	5 individuals	Lab-reared	19524			AgriBio, Bundoora, Victoria, Australia
+NC_046481_Hippodamia_variegata	NC_046481.1	Hippodamia variegata	Coleoptera	9.0	other_non_target	3 individuals	Bugs for Bugs	17823			AgriBio, Bundoora, Victoria, Australia
+NC_036104_Aethina_tumida	NC_036104.1	Aethina tumida	Coleoptera	8.4	other_non_target	3 individuals	Lab-reared	16576			AgriBio, Bundoora, Victoria, Australia
+NC_085142_Lucilia_cuprina	NC_085142.1	Lucilia cuprina	Diptera	4.0	other_non_target	5 heads	Lab-reared	15941			AgriBio, Bundoora, Victoria, Australia
+NC_014611_Bactrocera_tryoni	NC_014611.1	Bactrocera tryoni	Diptera	4.0	other_non_target	5 heads	Lab-reared	15925			AgriBio, Bundoora, Victoria, Australia
+NC_001566_Apis_mellifera_ligustica	NC_001566.1	Apis mellifera	Hymenoptera	3.0	other_non_target	6 legs, 3 individuals	Field-collected	16343	2025	Australia: Victoria, Bundoora	AgriBio, Bundoora, Victoria, Australia
+NC_071745_Bactrocera_bryoniae	NC_071745.1	Bactrocera bryoniae	Diptera	3.0	other_non_target	5 heads	Lab-reared	15960			AgriBio, Bundoora, Victoria, Australia
+NC_020003_Cydia_pomonella	NC_020003.2	Cydia pomonella	Lepidoptera	2.0	other_non_target	6 legs, 3 individuals	Tutura	15253			AgriBio, Bundoora, Victoria, Australia
+NC_081990_Rhopalosiphum_maidis	NC_081990.1	Rhopalosiphum maidis	Hemiptera	1.0	related_non_target	10 individuals	Lab-reared	16589			AgriBio, Bundoora, Victoria, Australia
+NC_029727_Myzus_persicae	NC_029727.1	Myzus persicae	Hemiptera	1.0	NAS_target	10 individuals	Lab-reared	17382			AgriBio, Bundoora, Victoria, Australia
+NC_069199_Aphidius_colemani	NC_069199.1	Aphidius colemani	Hymenoptera	0.5	other_non_target	5 individuals	Bugs for Bugs	16372			AgriBio, Bundoora, Victoria, Australia
+NC_069039_Trichogramma_pretiosum	NC_069039.1	Trichogramma pretiosum	Hymenoptera	0.5	NAS_target	10 individuals	Bugs for Bugs	16227			AgriBio, Bundoora, Victoria, Australia
+NC_022727_Diuraphis_noxia	NC_022727.1	Diuraphis noxia	Hemiptera	0.1	NAS_target	10 individuals	Lab-reared	15784			AgriBio, Bundoora, Victoria, Australia

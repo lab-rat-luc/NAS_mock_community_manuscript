@@ -1,0 +1,14 @@
+source_type	source_filename	destination_relative_path
+sra_fastq	mock_meta_rep1.fastq.gz	full-meta-dataset/input/barcode01.fastq
+sra_fastq	mock_meta_rep2.fastq.gz	full-meta-dataset/input/barcode02.fastq
+sra_fastq	mock_meta_rep3.fastq.gz	full-meta-dataset/input/barcode03.fastq
+sra_fastq	mock_nas_rep1.fastq.gz	full-nas-dataset/input/barcode09.fastq
+sra_fastq	mock_nas_rep2.fastq.gz	full-nas-dataset/input/barcode10.fastq
+sra_fastq	mock_nas_rep3.fastq.gz	full-nas-dataset/input/barcode11.fastq
+sra_fastq	mock_half_flowcell.fastq.gz	half-flowcell-dataset/input/unclassified.fastq
+supporting_data	full_meta_raw_sup_summary.tsv.gz	analysis/run_performance/inputs/full_meta_sequencing_summary_sup.tsv
+supporting_data	full_nas_raw_sup_summary.tsv.gz	analysis/run_performance/inputs/full_nas_sequencing_summary_sup.tsv
+supporting_data	half_flowcell_raw_sup_summary.tsv.gz	analysis/run_performance/inputs/half_flowcell_sequencing_summary_sup.tsv
+supporting_data	full_meta_analytical_summary.tsv.gz	full-meta-dataset/input/sequencing_summary.tsv
+supporting_data	full_nas_analytical_summary.tsv.gz	full-nas-dataset/input/sequencing_summary.tsv
+supporting_data	half_flowcell_analytical_summary.tsv.gz	half-flowcell-dataset/input/sequencing_summary.tsv

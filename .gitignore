@@ -1,0 +1,31 @@
+# Python bytecode
+__pycache__/
+*.py[cod]
+
+# Local editor and operating-system files
+.vscode/
+.idea/
+.DS_Store
+*~
+
+# Interrupted writes and temporary backups
+*.partial
+*.rename_partial
+*.bak
+*.pre_environments.sh
+*.pre_unified_env.sh
+
+# Local R session files
+.Rhistory
+.RData
+.Ruserdata
+.Rproj.user/
+
+# Generated workspace: outputs belong outside the repository.
+# This also excludes the previous default location if created locally.
+/reproduction_outputs/
+
+# Local environment installations
+/.micromamba/
+/.conda/
+/.env/

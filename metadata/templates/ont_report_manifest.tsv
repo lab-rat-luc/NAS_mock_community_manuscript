@@ -1,0 +1,4 @@
+run	experiment	report_json
+full_meta	whole_flowcell	{WORKSPACE}/full-meta-dataset/report_FBF72598_20260219_1223_4f326e35.json
+full_nas	whole_flowcell	{WORKSPACE}/full-nas-dataset/report_FBF77024_20260220_1337_8b313231.json
+half_flowcell	half_flowcell	{WORKSPACE}/half-flowcell-dataset/report_FBF71559_20260305_1539_2c752f6f.json

@@ -1,0 +1,10 @@
+dataset	read_subset	experiment	replicate	barcode	bam
+full_meta_rep1	all_metagenomic_reads	whole_flowcell	replicate1	barcode01	{WORKSPACE}/full-meta-dataset/filtered/barcode01/bams/positive.strict.bam
+full_meta_rep2	all_metagenomic_reads	whole_flowcell	replicate2	barcode02	{WORKSPACE}/full-meta-dataset/filtered/barcode02/bams/positive.strict.bam
+full_meta_rep3	all_metagenomic_reads	whole_flowcell	replicate3	barcode03	{WORKSPACE}/full-meta-dataset/filtered/barcode03/bams/positive.strict.bam
+full_nas_rep1_accepted	nas_accepted_reads	whole_flowcell	replicate1	barcode09	{WORKSPACE}/full-nas-dataset/filtered/barcode09/bams/positive.strict.bam
+full_nas_rep2_accepted	nas_accepted_reads	whole_flowcell	replicate2	barcode10	{WORKSPACE}/full-nas-dataset/filtered/barcode10/bams/positive.strict.bam
+full_nas_rep3_accepted	nas_accepted_reads	whole_flowcell	replicate3	barcode11	{WORKSPACE}/full-nas-dataset/filtered/barcode11/bams/positive.strict.bam
+full_nas_rep1_rejected	nas_rejected_reads	whole_flowcell	replicate1	barcode09	{WORKSPACE}/full-nas-dataset/filtered/barcode09/bams/unblock.strict.bam
+full_nas_rep2_rejected	nas_rejected_reads	whole_flowcell	replicate2	barcode10	{WORKSPACE}/full-nas-dataset/filtered/barcode10/bams/unblock.strict.bam
+full_nas_rep3_rejected	nas_rejected_reads	whole_flowcell	replicate3	barcode11	{WORKSPACE}/full-nas-dataset/filtered/barcode11/bams/unblock.strict.bam

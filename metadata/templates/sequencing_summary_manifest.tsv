@@ -1,0 +1,4 @@
+run	experiment	sequencing_summary
+full_meta	whole_flowcell	{WORKSPACE}/full-meta-dataset/input/sequencing_summary.tsv
+full_nas	whole_flowcell	{WORKSPACE}/full-nas-dataset/input/sequencing_summary.tsv
+half_flowcell	half_flowcell	{WORKSPACE}/half-flowcell-dataset/input/sequencing_summary.tsv
