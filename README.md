@@ -6,9 +6,8 @@ Code supporting the manuscript:
 
 ## Overview
 
-This repository contains the workflow used to compare nanopore adaptive
-sampling with metagenomic sequencing in a defined 16-species insect
-mock community.
+This repository contains the workflow used to compare NAS with metagenomic 
+sequencing in a defined 16-species insect mock community.
 
 The workflow performs adapter trimming, read filtering, mitochondrial
 mapping and statistical analyses to reproduce the manuscript results.
