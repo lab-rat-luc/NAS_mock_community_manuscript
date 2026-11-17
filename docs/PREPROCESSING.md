@@ -9,7 +9,6 @@ For installation, input organisation and path configuration, follow [WORKFLOW.md
 - Activate the `paper1-analysis` environment.
 - Configure `REPO_DIR`, `SRA_FASTQ_DIR`, `SUPPORTING_DATA_DIR`, `OUTPUT_DIR`, `REFERENCE_FASTA` and `DORADO` as described in workflow.md.
 - Run `workflow/prepare_inputs.py` to import the seven FASTQs and six sequencing summaries.
-- Set OUTPUT_DIR to a new directory outside the code repository and the directories containing your downloaded data.
 
 ## Run preprocessing and mapping
 
