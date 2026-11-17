@@ -6,20 +6,16 @@ Code supporting the manuscript:
 
 ## Overview
 
-This repository contains the workflow used to compare NAS with metagenomic 
-sequencing in a defined 16-species insect mock community.
+This repository contains the workflow used to compare NAS with metagenomic sequencing in a defined insect mock community including sixteen species.
 
-The workflow performs adapter trimming, read filtering, mitochondrial
-mapping and statistical analyses to reproduce the manuscript results.
+The workflow performs adapter trimming, read filtering, read mapping and statistical analyses to reproduce the manuscript results.
 
 ## Data
 
 - NCBI SRA: Seven FASTQs (submission SUB16635091; BioSample SAMN65318136).
-- Zenodo: Six sequencing summaries and three MinKNOW reports.
-  Reserved DOI: 10.5281/zenodo.24239885.
+- Zenodo: Six sequencing summaries and three MinKNOW reports. (Reserved DOI: 10.5281/zenodo.24239885.)
 
-Raw SUP summaries support complete-run metrics. Analytical summaries
-support read classification and downstream analyses. Both are required.
+Raw SUP sequencing summaries are for the whole-run metrics table. Analytical summaries support read classification and other downstream analyses. Both are required.
 
 ## Installation
 
@@ -36,15 +32,15 @@ See docs/INSTALLATION.md for details.
 
 1. Prepare inputs.
 2. Trim, filter and map reads.
-3. Generate canonical datasets.
-4. Reproduce manuscript statistics, tables and figures.
+3. Generate canonical dataset tables.
+4. Statistic, table and figure generation.
 
 Repository contents:
 
 - workflow/: execution scripts.
 - scripts/: preprocessing, mapping and analyses.
 - metadata/: input mappings and reference metadata.
-- references/: mitochondrial reference sequences.
+- references/: mitochondrial genome reference sequences for each of the sixteen insect species included in the mock.
 - docs/: installation and execution instructions.
 
 See docs/WORKFLOW.md for complete instructions.
