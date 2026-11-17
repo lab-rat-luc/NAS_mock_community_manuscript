@@ -1,83 +1,87 @@
 # Installation
 
-## Status
-
-The unified environment has been installed successfully on the authors'
-Linux HPC system. Specified Python and R packages load successfully.
-End-to-end analytical reproduction remains pending.
+Use the same `paper1-analysis` environment for input preparation, preprocessing, canonical data table generation and analyses.
 
 ## Requirements
 
-- Linux-compatible system.
-- Micromamba.
-- Standard command-line utilities, including Bash, realpath and flock.
-- Sufficient storage for decompressed reads and generated intermediates.
-- Dorado 1.4.0, installed separately.
+- A Linux-compatible system.
+- Micromamba installed and configured for shell activation.
+- Standard linux command-line utilities, including Bash, `realpath` and `flock`.
+- Sufficient storage for downloaded data, decompressed reads and generated files.
+- Dorado v1.4.0, installed separately.
 
-Resource requirements will be finalised after reproduction testing.
+Run substantial processing on an appropriately resourced workstation or compute allocation.
 
-## Create the analysis environment
+## 1. Create the analysis environment
 
-From the repository root:
+From the repository root, run:
 
-    micromamba create --file environment.yml --strict-channel-priority --yes
-    micromamba activate paper1-analysis
+```bash
+micromamba create --file environment.yml --strict-channel-priority --yes
+micromamba activate paper1-analysis
+```
 
-Use this same environment for input preparation, preprocessing,
-canonical generation and manuscript analyses.
+The environment specifications are provided in ../environment.yml.
 
-## Configure Dorado
+## 2. Install and configure Dorado
 
-Obtain Dorado 1.4.0 from the official Oxford Nanopore Dorado releases.
-The final release documentation will include the verified download link.
+Download Dorado v1.4.0 (Linux) from the official Oxford Nanopore Dorado releases.
 
-Set the executable path for the current shell:
+Set the path to the installed executable:
 
-    export DORADO="/path/to/dorado-1.4.0/bin/dorado"
-    "$DORADO" --version
+```bash
+export DORADO="/path/to/dorado-1.4.0/bin/dorado"
+"$DORADO" --version
+```
 
-The authors' executable reports 1.4.0+ba44a013.
-Dorado is used for adapter trimming in this workflow, not rebasecalling.
-No basecalling model download or POD5 input is required for trimming.
+Replace the example path with your installation path. The executable used for this workflow is `1.4.0+ba44a013`.
 
-## Principal environment versions
+Dorado is used for adapter trimming, not basecalling. No basecalling model download or POD5 files are required.
 
-- Python 3.10.19
-- pandas 2.3.3
-- NumPy 2.2.6
-- SeqKit 2.11.0
-- minimap2 2.30-r1287
-- Samtools 1.22.1
-- R 4.5.3
+Set `DORADO` again when opening a new terminal or compute session, unless it is already configured in your shell environment.
 
-Exact requested R package versions are listed in environment.yml.
-The reconstructed environment currently reports HTSlib 1.24 and pigz 2.8.
+## 3. Check the installation
 
-## Historical versus release versions
+With `paper1-analysis` active, run:
 
-Historical filtering used SeqKit 2.8.2. The unified release environment
-uses SeqKit 2.11.0, which was already used for canonical run-summary
-statistics. Equivalence of the filtering results will be assessed during
-internal reproduction testing.
+```bash
+python3 -c 'import numpy, pandas; print(numpy.__version__, pandas.__version__)'
+Rscript -e 'library(data.table); library(dplyr); library(ggplot2)'
+seqkit version
+minimap2 --version
+samtools --version
+pigz --version
+"$DORADO" --version
+```
 
-Some original Python analyses ran under different Python/NumPy versions.
-The unified environment is a release reconstruction, not an assertion
-that every historical execution used the same environment.
+Check the required system utilities:
 
-## Check the installation
+```bash
+command -v bash realpath flock
+```
 
-    python3 -c 'import numpy, pandas; print(numpy.__version__, pandas.__version__)'
-    Rscript -e 'library(data.table); library(dplyr); library(ggplot2)'
-    seqkit version
-    minimap2 --version
-    samtools --version
-    pigz --version
-    "$DORADO" --version
+The Python and R commands should complete without import errors. Each tool should report its version, and each system utility should return an executable path.
+
+### Principal software versions
+
+| Software | Version |
+|---|---|
+| Python | 3.10.19 |
+| pandas | 2.3.3 |
+| NumPy | 2.2.6 |
+| SeqKit | 2.11.0 |
+| minimap2 | 2.30-r1287 |
+| SAMtools | 1.22.1 |
+| R | 4.5.3 |
+| pigz | 2.8 |
+| Dorado | 1.4.0 |
+
+See ../environment.yml for the environment specification, including R packages.
 
 ## Next steps
 
-Download the SRA FASTQs and Zenodo supporting dataset as described in
-README.md. Configure a separate reproduction workspace.
+Follow [WORKFLOW.md](WORKFLOW.md) to download and organise the inputs, configure paths and run the analyses.
 
-See PREPROCESSING.md for preprocessing instructions.
-Do not run substantial processing on an HPC login node.
+Set `OUTPUT_DIR` to a new directory outside the code repository and the directories containing your downloaded data.
+
+See [PREPROCESSING.md](PREPROCESSING.md) for preprocessing settings and thread usage.
