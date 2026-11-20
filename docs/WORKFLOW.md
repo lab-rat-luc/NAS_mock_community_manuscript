@@ -16,7 +16,10 @@ Dorado v1.4.0 must be installed separately.
 
 ## 2. Download and organise inputs
 
-See the repository [README](../README.md) for data identifiers and availability.
+Download the raw sequencing data from
+[NCBI BioProject PRJNA1562222](https://www.ncbi.nlm.nih.gov/bioproject/PRJNA1562222)
+and the supporting sequencing metadata from
+[Zenodo](https://doi.org/10.5281/zenodo.24239885).
 
 Download the seven compressed FASTQs into one directory:
 

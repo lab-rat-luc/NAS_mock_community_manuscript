@@ -12,8 +12,8 @@ The workflow performs adapter trimming, read filtering, read mapping and statist
 
 ## Data
 
-- NCBI SRA: Seven FASTQs (submission SUB16635091; BioSample SAMN65318136).
-- Zenodo: Six sequencing summaries and three MinKNOW reports. (Reserved DOI: 10.5281/zenodo.24239885.)
+- **Raw sequencing data:** Seven Oxford Nanopore FASTQ datasets are available through [NCBI BioProject PRJNA1562222](https://www.ncbi.nlm.nih.gov/bioproject/PRJNA1562222).
+- **Supporting data:** Six sequencing summaries and three MinKNOW reports are available through [Zenodo](https://doi.org/10.5281/zenodo.24239885).
 
 Raw SUP sequencing summaries are for the whole-run metrics table. Analytical summaries support read classification and other downstream analyses. Both are required.
 
